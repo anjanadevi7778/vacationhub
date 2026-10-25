@@ -7,6 +7,6 @@ export const getCurrentUser = async () => {
     return session?.user;
   } catch (error) {
     console.error("GET_CURRENT_USER_ERROR:", error);
-    return null;
+    return undefined;
   }
 };

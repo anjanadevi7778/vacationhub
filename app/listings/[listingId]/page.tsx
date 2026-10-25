@@ -9,6 +9,8 @@ import { getCurrentUser } from "@/services/user";
 import { getListingById } from "@/services/listing";
 import { categories } from "@/utils/constants";
 
+export const dynamic = "force-dynamic";
+
 interface IParams {
   listingId: string;
 }

@@ -34,6 +34,7 @@ interface ListingClientProps {
     | (User & {
         id: string;
       })
+    | null
     | undefined;
 }
 

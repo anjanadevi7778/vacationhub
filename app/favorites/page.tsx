@@ -7,6 +7,8 @@ import Heading from "@/components/Heading";
 import { getCurrentUser } from "@/services/user";
 import { getFavoriteListings } from "@/services/favorite";
 
+export const dynamic = "force-dynamic";
+
 const FavoritesPage = async () => {
   const user = await getCurrentUser();
 

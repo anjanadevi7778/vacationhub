@@ -21,7 +21,9 @@ const Navbar: React.FC<NavbarProps> = async () => {
           <UserMenu user={user} />
         </div>
       </nav>
-      <Categories />
+      <Suspense fallback={<></>}>
+        <Categories />
+      </Suspense>
     </header>
   );
 };

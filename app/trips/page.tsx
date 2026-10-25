@@ -9,6 +9,8 @@ import { getCurrentUser } from "@/services/user";
 import { getReservations } from "@/services/reservation";
 import { getFavorites } from "@/services/favorite";
 
+export const dynamic = "force-dynamic";
+
 const TripsPage = async () => {
   const user = await getCurrentUser();
   const favorites = await getFavorites();
